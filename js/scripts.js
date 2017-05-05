@@ -15,7 +15,7 @@ function count(param){ // function that takes param, compares it to nums array, 
 
   debugger;
   for (var i = 0; i <= nums.length; i++) { // run loop on nums, starting at index 0, as long as index is equal to or less than the length of nums, incrementing by 1
-    if (i === param) {//for each loop, ask if param is equal to current index
+    if (param >= i) {//for each loop, ask if param is equal to current index
       var x = nums[i];//return the current index of nums
       newArray.push(x);//and push current index to new array
     };
