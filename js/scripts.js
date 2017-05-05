@@ -16,9 +16,8 @@ function count(param){ // function that takes param, compares it to nums array, 
   debugger;
   for (var i = 0; i <= nums.length; i++) { // run loop on nums, starting at index 0, as long as index is equal to or less than the length of nums, incrementing by 1
     if (i === param) {//for each loop, ask if param is equal to current index
-      return nums[i];//return the current index of nums
-      return "hey!";//if it is, return "hey!"
-      newArray.push(newVar);//and push current index to new array
+      var x = nums[i];//return the current index of nums
+      newArray.push(x);//and push current index to new array
     };
   };
 };
@@ -35,8 +34,9 @@ $(document).ready(function(){
 
     var userInput = count(userInput);
 
+    console.log(newArray);
 
-    $("#result").empty().append("<li>" + userInput + "</li>");
+    // $("#result").empty().append("<li>" + userInput + "</li>");
 
   });
 });
