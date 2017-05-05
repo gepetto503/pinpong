@@ -1,4 +1,6 @@
 //back end
+var nums = ["0", "1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16"]
+var newArray = []
 
 function isItNumber(param){
   if (isNaN(param)) {
@@ -8,10 +10,22 @@ function isItNumber(param){
   };
 };
 
+function count(param){ // function that takes param, compares it to nums array, and pushes each index into a newArray for as long as the param is equal to or less than the current index.
+  // var newArray = [];
+
+  debugger;
+  for (var i = 0; i <= nums.length; i++) { // run loop on nums, starting at index 0, as long as index is equal to or less than the length of nums, incrementing by 1
+    if (i === param) {//for each loop, ask if param is equal to current index
+      return nums[i];//return the current index of nums
+      return "hey!";//if it is, return "hey!"
+      newArray.push(newVar);//and push current index to new array
+    };
+  };
+};
+
 //front end
 
 $(document).ready(function(){
-
   $("#form-one").submit(function(event){
     event.preventDefault();
 
@@ -19,10 +33,10 @@ $(document).ready(function(){
 
     var userInput = isItNumber(userInput);
 
+    var userInput = count(userInput);
+
+
     $("#result").empty().append("<li>" + userInput + "</li>");
 
-
-  })
-
-
-})
+  });
+});
