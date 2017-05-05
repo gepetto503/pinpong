@@ -9,7 +9,7 @@ $(document).ready(function(){
 
     var userInput = $("#user-input").val();
 
-    $("#result").append("<li>" + userInput + "</li>");
+    $("#result").empty().append("<li>" + userInput + "</li>");
 
 
   })
