@@ -4,7 +4,7 @@ var newArray = []
 
 function isItNumber(input){
   if (isNaN(input)) {
-    return ("please enter a number")
+    alert("please enter a number")
   } else {
     return input;
   };
