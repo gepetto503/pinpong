@@ -4,7 +4,7 @@ var newArray = []
 
 function isItNumber(input){
   if (isNaN(input)) {
-    return "please enter a number"
+    return ("please enter a number")
   } else {
     return input;
   };
@@ -38,13 +38,13 @@ $(document).ready(function(){
 debugger;
     var userInput = parseInt($("#user-input").val());
 
-    var userInput = isItNumber(userInput);
+    var parsedInput = isItNumber(userInput);
 
-    count(userInput);
+    count(parsedInput);
 
-    var userInput = toString(newArray);
+    var stringifiedInput = toString(newArray);
 
-    var subStringsArray = splitString(userInput);
+    var subStringsArray = splitString(stringifiedInput);
 
     $("#result").empty().append("<li>" + subStringsArray + "</li>");
 
