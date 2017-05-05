@@ -20,17 +20,20 @@ _This interactive web page allows users to input a value and then displays value
   * _example: input "7"; output = 7._
 * _5. for user input x, push the value of the xth index of nums array into a new array._
   * _example: input = "9", console.log(newArray); console log: [9]_
-
-* _6 push the value of each index of nums array into newArray as well as the value of the xth index.
+* _6 push the value of each index of nums array into newArray as well as the value of the xth index._
   * _example: input = "4", console.log(newArray); console log: [0,1,2,3,4]_
-
-* _7. for user input x, return a range of numbers between and including 1 and x, that count up in increments of one._
+* _7. turn the new array into a string._
   * _example: input = "9"; output = "1,2,3,4,5,6,7,8,9"._
-* _8. exception 1: inputted numbers divisible by 3 are replaced with "ping"_
+* _8. split the string into sub strings._
+  * _example: input = "9"; output = "1","2","3","4","5","6","7","8","9"_
+* _9. display each sub string in a list item_
+  * _example: input = "0"; output = <li>"1"</li><li>"2"</li>..._
+
+* _10. exception 1: inputted numbers divisible by 3 are replaced with "ping"_
   * _example: input = "13"; output = "1,2,ping,4,5,ping,7,8,ping,10,11,ping,13"._
-* _9. exception 2: inputted numbers divisible by 5 are replaced with "pong"_
+* _11. exception 2: inputted numbers divisible by 5 are replaced with "pong"_
   * _example: input = "15"; output = "1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,pong"._
-* _10. exception 3: inputted numbers divisible by both 5 and 3 are replaced with "pingpong""_
+* _12. exception 3: inputted numbers divisible by both 5 and 3 are replaced with "pingpong""_
   * _example: input = "15"; output = "1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,pingpong"._
 
 
