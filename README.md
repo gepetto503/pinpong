@@ -24,6 +24,7 @@ _This interactive web page allows users to input a value and then displays value
   * _example: input = "4", console.log(newArray); console log: [0,1,2,3,4]_
 * _7. turn the new array into a string._
   * _example: input = "9"; output = "1,2,3,4,5,6,7,8,9"._
+
 * _8. split the string into sub strings._
   * _example: input = "9"; output = "1","2","3","4","5","6","7","8","9"_
 * _9. display each sub string in a list item_
