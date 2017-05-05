@@ -24,8 +24,8 @@ _This interactive web page allows users to input a value and then displays value
   * _example: input = "4", console.log(newArray); console log: [0,1,2,3,4]_
 * _7. display the newArray._
   * _example: input = "4",: output: [0,1,2,3,4]_
-  
-* _8. exception 1: inputted numbers divisible by 3 are replaced with "ping"_
+
+* _8. exception 1: numbers in the newArray divisible by 3 are replaced with "ping"_
   * _example: input = "13"; output = "1,2,ping,4,5,ping,7,8,ping,10,11,ping,13"._
 * _9. exception 2: inputted numbers divisible by 5 are replaced with "pong"_
   * _example: input = "15"; output = "1,2,ping,4,pong,ping,7,8,ping,pong,11,ping,13,14,pong"._

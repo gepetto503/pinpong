@@ -13,12 +13,24 @@ function isItNumber(input){
 function count(input){ // function that takes input, compares it to nums array, and pushes each index into a newArray for as long as the input is equal to or less than the current index.
   for (var i = 0; i <= nums.length; i++) { // run loop on nums, starting at index 0, as long as index is equal to or less than the length of nums, incrementing by 1
     if (input >= i) {//for each loop, ask if input is equal to or greater current index
-      if (i % 3 === 0) {//if it is, ask if the current index is cleanly divisble by 3
-        newArray.push("ping");
-      } else { //if current index doesn't go into 3 cleanly,
-        var x = nums[i];//return the current index of nums to variable
-        newArray.push(x);//and push it to new array
+      if (i != 0) {
+
+        if (i % 3 === 0 && i % 5 === 0) {//if it is, ask if the current index is cleanly divisble by 3
+          newArray.push("pingpong");
+
+        } else if (i % 3 === 0){
+          newArray.push("ping");
+
+        } else if (i % 5 === 0){
+          newArray.push("pong");
+
+        } else { //if current index doesn't go into 3 cleanly,
+          var x = nums[i];//return the current index of nums to variable
+          newArray.push(x);//and push it to new array
+        };
+        
       };
+
     };
   };
 };
