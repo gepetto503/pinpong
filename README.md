@@ -24,12 +24,11 @@ _This interactive web page allows users to input a value and then displays value
   * _example: input = "4", console.log(newArray); console log: [0,1,2,3,4]_
 * _7. turn the new array into a string._
   * _example: input = "9"; output = "1,2,3,4,5,6,7,8,9"._
-
 * _8. split the string into sub strings._
   * _example: input = "9"; output = "1","2","3","4","5","6","7","8","9"_
+
 * _9. display each sub string in a list item_
   * _example: input = "0"; output = <li>"1"</li><li>"2"</li>..._
-
 * _10. exception 1: inputted numbers divisible by 3 are replaced with "ping"_
   * _example: input = "13"; output = "1,2,ping,4,5,ping,7,8,ping,10,11,ping,13"._
 * _11. exception 2: inputted numbers divisible by 5 are replaced with "pong"_
