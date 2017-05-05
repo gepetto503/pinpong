@@ -7,8 +7,9 @@ $(document).ready(function(){
   $("#form-one").submit(function(event){
     event.preventDefault();
 
+    var userInput = $("#user-input").val();
 
-    $("#result").append("<li>" + "blah blah" + "</li>");
+    $("#result").append("<li>" + userInput + "</li>");
 
 
   })
