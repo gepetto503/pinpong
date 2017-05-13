@@ -1,5 +1,4 @@
 //back end
-// var nums = [0, 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
 var newArray = []
 
 function isItNumber(input){
@@ -10,11 +9,11 @@ function isItNumber(input){
   };
 };
 
-function count(input){ // function that takes input, compares it to nums array, and pushes each index into a newArray for as long as the input is equal to or less than the current index.
-  for (var i = 0; i <= input; i++) { // run loop on parsedInput, starting at index 0, as long as index is equal to or less than the length of nums, incrementing by 1
-    if (i != 0) {//if parsedInput is not zero...
+function count(input){
+  for (var i = 0; i <= input; i++) {
+    if (i != 0) {
 
-      if (i % 3 === 0 && i % 5 === 0) {//ask if the current index is cleanly divisble by 3
+      if (i % 3 === 0 && i % 5 === 0) {
         newArray.push("pingpong");
 
       } else if (i % 3 === 0){
@@ -23,8 +22,8 @@ function count(input){ // function that takes input, compares it to nums array, 
       } else if (i % 5 === 0){
         newArray.push("pong");
 
-      } else { //if current index doesn't go into 3 cleanly,
-        newArray.push(i);//and push it to new array
+      } else {
+        newArray.push(i);
       };
     };
   };
@@ -50,12 +49,6 @@ debugger;
     var userInput = parseInt($("#user-input").val());
 
     var parsedInput = isItNumber(userInput);
-
-    // count(parsedInput);
-    //
-    // var stringifiedInput = toString(newArray);
-    //
-    // var subStringsArray = splitString(stringifiedInput);
 
     $("#result").text(count(parsedInput));
 
