@@ -1,7 +1,23 @@
+html {
+  background: url("img/gump.jpg") center center fixed no-repeat;
+  background-size: cover;
+}
+
+body{
+  background: inherit;
+}
 .green{
   background-color: green;
 }
 
 .jumbotron{
   text-align: center;
+  background: rgba(225, 225, 225, 0.4);
+}
+
+
+.see-thru{
+  background: rgba(225, 225, 225, 0.4);
+  height: 1000px;
+  padding: 30px;
 }

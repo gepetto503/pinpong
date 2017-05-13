@@ -1,5 +1,5 @@
 //back end
-var nums = [0, 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+// var nums = [0, 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
 var newArray = []
 
 function isItNumber(input){
@@ -11,28 +11,24 @@ function isItNumber(input){
 };
 
 function count(input){ // function that takes input, compares it to nums array, and pushes each index into a newArray for as long as the input is equal to or less than the current index.
-  for (var i = 0; i <= nums.length; i++) { // run loop on nums, starting at index 0, as long as index is equal to or less than the length of nums, incrementing by 1
-    if (input >= i) {//for each loop, ask if input is equal to or greater current index
-      if (i != 0) {
+  for (var i = 0; i <= input; i++) { // run loop on parsedInput, starting at index 0, as long as index is equal to or less than the length of nums, incrementing by 1
+    if (i != 0) {//if parsedInput is not zero...
 
-        if (i % 3 === 0 && i % 5 === 0) {//if it is, ask if the current index is cleanly divisble by 3
-          newArray.push("pingpong");
+      if (i % 3 === 0 && i % 5 === 0) {//ask if the current index is cleanly divisble by 3
+        newArray.push("pingpong");
 
-        } else if (i % 3 === 0){
-          newArray.push("ping");
+      } else if (i % 3 === 0){
+        newArray.push("ping");
 
-        } else if (i % 5 === 0){
-          newArray.push("pong");
+      } else if (i % 5 === 0){
+        newArray.push("pong");
 
-        } else { //if current index doesn't go into 3 cleanly,
-          var x = nums[i];//return the current index of nums to variable
-          newArray.push(x);//and push it to new array
-        };
-        
+      } else { //if current index doesn't go into 3 cleanly,
+        newArray.push(i);//and push it to new array
       };
-
     };
   };
+  return newArray;
 };
 
 function toString(array){
@@ -55,13 +51,13 @@ debugger;
 
     var parsedInput = isItNumber(userInput);
 
-    count(parsedInput);
+    // count(parsedInput);
+    //
+    // var stringifiedInput = toString(newArray);
+    //
+    // var subStringsArray = splitString(stringifiedInput);
 
-    var stringifiedInput = toString(newArray);
-
-    var subStringsArray = splitString(stringifiedInput);
-
-    $("#result").empty().append("<li>" + subStringsArray + "</li>");
+    $("#result").text(count(parsedInput));
 
   });
 });
